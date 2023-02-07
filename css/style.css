@@ -278,7 +278,7 @@ q {
 
 .downloadApp_container {
   height: 100%;
-  background-image: url(img/orig.png);
+  background-image: url(../img/orig.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -388,7 +388,7 @@ h1 {
 }
 
 .howRentScooter_item-middle-bgTwo {
-  background-image: url(img/arrow.svg);
+  background-image: url(../img/arrow.svg);
   position: absolute;
   left: 52vw;
   margin-top: 8vh;
@@ -412,7 +412,7 @@ h1 {
 }
 
 .rates_item h3 {
-  font-size: 2.25em;
+  font-size: 2.05em;
   margin-bottom: 2vh;
 }
 
@@ -512,7 +512,7 @@ h1 {
 .rates_dude {
   width: 90%;
   height: 400px;
-  background-image: url(./img/dude.jpg);
+  background-image: url(../img/dude.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border: 5px solid var(--color-black);
@@ -522,7 +522,7 @@ h1 {
 
 .subscription {
   padding: 5.5em 0;
-  background-image: url(img/bg-big.jpg);
+  background-image: url(../img/bg-big.jpg);
   background-size: cover;
   background-position: right 0 bottom 0;
   background-repeat: no-repeat;
@@ -748,11 +748,10 @@ h1 {
 
 .downloadAppcontaner_section {
   padding: 83px;
-  background-image: url(img/bg-phone.jpg);
+  background-image: url(../img/bg-phone.jpg);
   background-size: 95%;
   background-position: 0 250px;
   background-repeat: no-repeat;
-  /* height: 76vh; */
 }
 
 .downloadAppcontaner_section h2 {
