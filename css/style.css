@@ -1,0 +1,798 @@
+/* global */
+@font-face {
+  font-family: "YS Text";
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-thin.woff")
+      format("woff"),
+    url("https://yastatic.net/s3/home/fonts/ys/4/text-thin.woff2")
+      format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "YS Text";
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-thin-italic.woff")
+      format("woff"),
+    url("https://yastatic.net/s3/home/fonts/ys/4/text-thin-italic.woff2")
+      format("woff2");
+  font-weight: 100;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "YS Text";
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-light.woff")
+      format("woff"),
+    url("https://yastatic.net/s3/home/fonts/ys/4/text-light.woff2")
+      format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "YS Text";
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-light-italic.woff")
+      format("woff"),
+    url("https://yastatic.net/s3/home/fonts/ys/4/text-light-italic.woff2")
+      format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "YS Text";
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff")
+      format("woff"),
+    url("https://yastatic.net/s3/home/fonts/ys/4/text-regular.woff2")
+      format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "YS Text";
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-regular-italic.woff")
+      format("woff"),
+    url("https://yastatic.net/s3/home/fonts/ys/4/text-regular-italic.woff2")
+      format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "YS Text";
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff")
+      format("woff"),
+    url("https://yastatic.net/s3/home/fonts/ys/4/text-medium.woff2")
+      format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "YS Text";
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-medium-italic.woff")
+      format("woff"),
+    url("https://yastatic.net/s3/home/fonts/ys/4/text-medium-italic.woff2")
+      format("woff2");
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "YS Text";
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-bold.woff")
+      format("woff"),
+    url("https://yastatic.net/s3/home/fonts/ys/4/text-bold.woff2")
+      format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "YS Text";
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-bold-italic.woff")
+      format("woff"),
+    url("https://yastatic.net/s3/home/fonts/ys/4/text-bold-italic.woff2")
+      format("woff2");
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "YS Text";
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-black.woff")
+      format("woff"),
+    url("https://yastatic.net/s3/home/fonts/ys/4/text-black.woff2")
+      format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "YS Text";
+  src: url("https://yastatic.net/s3/home/fonts/ys/4/text-black-italic.woff")
+      format("woff"),
+    url("https://yastatic.net/s3/home/fonts/ys/4/text-black-italic.woff2")
+      format("woff2");
+  font-weight: 900;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+* {
+  font-family: "YS Text";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--color-black);
+}
+
+:root {
+  --color-yellow: #ffde40;
+  --color-green: #00ca50;
+  --color-lighrgrey: #fafafa;
+  --color-black: #21201f;
+  --color-grey: #ccc;
+  --color-white: #fff;
+}
+
+body {
+  background: var(--color-yellow);
+}
+
+section {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.container-wide {
+  width: 1230px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.button {
+  background-color: var(--color-black);
+  outline: none;
+  font-weight: bold;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.25em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.button a {
+  color: var(--color-white)
+ }
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+
+q {
+  quotes: "«" "»";
+}
+
+/* header */
+
+.header-container {
+  width: 100%;
+  background-color: var(--color-yellow);
+  position: fixed;
+  z-index: 40;
+}
+
+.navbar {
+  background: var(--color-yellow);
+  color: var(--color-black);
+  padding: 15px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo {
+  cursor: pointer;
+}
+
+.navbar ul.links {
+  margin-left: auto;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul.links li {
+  padding: 0 10px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul.links li a {
+  font-weight: 600;
+}
+
+.navbar ul.links li:hover {
+  cursor: pointer;
+}
+
+.right {
+  
+  line-height: 2.375em;
+  padding: 0 45px;
+  border-radius: 18px;
+}
+
+.content {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar.sticky {
+  position: fixed;
+  z-index: 40;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* downloadApp */
+
+.downloadApp {
+  height: 90vh;
+  padding-top: 80px;
+}
+
+.downloadApp_container {
+  height: 100%;
+  background-image: url(img/orig.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: "YS Text";
+  width: 28%;
+  font-size: 2.25rem;
+  color: var(--color-black);
+  position: absolute;
+  bottom: 20vh;
+}
+
+.downloadApp_container-btn {
+  min-width: 140px;
+  padding: 12px 64px;
+  position: absolute;
+  bottom: 10vh;
+  line-height: 3.375em;
+}
+
+/* links-container */
+
+.links-container {
+  width: 100%;
+  height: 40vh;
+  padding-top: 15vh;
+  color: var(--color-white);
+  background: var(--color-yellow);
+}
+
+.links-container_title {
+  color: var(--color-white);
+  font-size: 4em;
+}
+
+.links-container_title span {
+  color: var(--color-white);
+}
+
+.links-container a {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+/* howRentScooter */
+.howRentScooter {
+  margin-bottom: 6vh;
+}
+
+.howRentScooter_items {
+  display: block;
+  justify-content: space-between;
+}
+
+ .howRentScooter_item_video {
+  width: 360px; 
+  height: 645px; 
+  object-fit: fill;
+} 
+
+.howRentScooter_items_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.howRentScooter_title {
+  font-size: 4em;
+  line-height: 4em;
+}
+
+.howRentScooter_item-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.howRentScooter_item-left div p {
+  font-size: 36px;
+  width: 100%;
+  padding-top: 35%;
+  margin-bottom: 150px;
+}
+
+.howRentScooter_item-middle {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  font-size: 2.25em;
+}
+
+.howRentScooter_item-middle_left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 30vw;
+}
+
+.howRentScooter_item-middle p {
+  width: 80%;
+  margin-top: 50px;
+}
+
+.howRentScooter_item-middle-bgOne {
+  height: 15vh;
+}
+
+.howRentScooter_item-middle-bgTwo {
+  background-image: url(img/arrow.svg);
+  position: absolute;
+  left: 52vw;
+  margin-top: 8vh;
+  width: 20vw;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* rates */
+
+.rates_item {
+  width: 90%;
+  margin-bottom: 5vh;
+  border-radius: 56px;
+  padding: 56.9px 37.9px 2vh;
+}
+
+.rates_item img {
+  margin-bottom: 2vh;
+}
+
+.rates_item h3 {
+  font-size: 2.25em;
+  margin-bottom: 2vh;
+}
+
+.rates_item p {
+  font-size: 1.375em;
+  font-weight: normal;
+  margin-bottom: 3vh;
+}
+
+.rates_choose {
+  border-radius: 56px;
+  margin: 0 auto;
+  width: 100%;
+  background: var(--color-black);
+}
+
+.rates_choose p {
+  font-size: 2.5em;
+  padding: 50px 11vw;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.rates_total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rates_left,
+.rates_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rates_left {
+}
+
+.rates_right {
+  padding-top: 30vh;
+}
+
+.rates_left_fix,
+.rates_right_per-minute {
+  border: 5px solid var(--color-black);
+  margin-bottom: 5vh;
+}
+
+.rates_left_another {
+  border: 5px dashed var(--color-black);
+  margin-bottom: 5vh;
+}
+
+.whatDriving {
+  width: 120%;
+  background-color: var(--color-black);
+}
+
+.whatDriving * {
+  width: 77%;
+  color: var(--color-white);
+  margin-bottom: 15px;
+}
+
+.rates_choose_plus_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rates_choose_plus {
+  background-image: url(img/bg-small.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--color-white);
+}
+
+.rates_choose_plus_top h3 {
+  width: 55%;
+  justify-content: space-between;
+}
+
+.rates_choose_plus img {
+  width: 20%;
+  height: 20%;
+}
+
+.rates_item_bg {
+  height: 40vh;
+  background-image: url(img/dude.jpg);
+  border: 5px solid var(--color-black);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rates_dude {
+  width: 90%;
+  height: 400px;
+  background-image: url(img/dude.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid var(--color-black);
+}
+
+/* subscription */
+
+.subscription {
+  padding: 5.5em 0;
+  background-image: url(img/bg-big.jpg);
+  background-size: cover;
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+  border-radius: 56px 56px 0 0;
+}
+
+.subscription h2 {
+  width: 50%;
+  font-size: 5.25em;
+}
+
+.subscription_container_top {
+  display: flex;
+}
+.subscription_container_top img {
+  width: 45%;
+}
+
+.subscription_container_text {
+  width: 80%;
+  font-size: 2em;
+  margin-bottom: 64px;
+  font-weight: 600;
+}
+
+.subscription_container_bonuses {
+  display: flex;
+}
+
+.subscription_container_bonus {
+  width: 50%;
+}
+
+.subscription_container_bonus h3 {
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 2em;
+}
+
+.subscription_container_bonus p {
+  font-size: 1.375em;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+/* carefully */
+
+.carefully-container {
+  max-width: 735px;
+  margin: 60px 300px 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+.itc-slider__item {
+  counter-increment: slide;
+  position: relative;
+  flex: 0 0 100%;
+  max-width: 100%;
+  height: 414px;
+  user-select: none;
+  will-change: transform;
+}
+
+.itc-slider {
+  position: relative;
+}
+
+.itc-slider__wrapper {
+  overflow: hidden;
+}
+
+.itc-slider__items {
+  height: 418px;
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.itc-slider__transition-none {
+  transition: none;
+}
+
+.itc-slider__item video {
+  width: 734px;
+  height: 414px;
+  border-radius: 32px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+}
+
+/* индикаторы */
+.itc-slider__indicators {
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  list-style: none;
+}
+
+.itc-slider__indicator {
+  flex: 0 1 auto;
+  box-sizing: content-box;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  margin-left: 3px;
+  background-color: var(--color-grey);
+  background-clip: padding-box;
+  border-radius: 50%;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  cursor: pointer;
+}
+
+.itc-slider__indicator_active {
+  background-color: var(--color-black);
+}
+
+/* rideCarefully */
+
+.rideCarefully {
+  background-color: var(--color-white);
+  border-radius: 56px;
+  padding: 150px 70px;
+  position: relative;
+  top: -100px;
+  z-index: 0;
+}
+
+.rideCarefully_title {
+  text-align: start;
+  margin-bottom: 72px;
+  font-size: 4em;
+}
+
+.rideCarefully_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rideCarefully_item:nth-child(even) {
+  width: 48%;
+  margin-bottom: 94px;
+}
+
+.rideCarefully_item:nth-child(odd) {
+  width: 43%;
+  margin-bottom: 94px;
+}
+
+.rideCarefully_item img {
+  margin-bottom: 24px;
+}
+.rideCarefully_item h3 {
+  margin-bottom: 16px;
+  font-size: 2.25em;
+}
+
+.rideCarefully_item p {
+  font-size: 1.375em;
+  font-weight: 600;
+}
+
+/* Carefully */
+
+.CarefullyHint {
+  width: 35%;
+  padding: 83px;
+  position: relative;
+  top: -25vh;
+  right: -14vw;
+  z-index: 2;
+  background-color: var(--color-green);
+  border-radius: 56px;
+}
+
+.CarefullyHint img {
+  margin-bottom: 2em;
+}
+
+.CarefullyHint p {
+  color: var(--color-white);
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+/* whereIsScooters */
+
+.whereIsScooters {
+  background: var(--color-white);
+  border-radius: 56px 56px 0 0;
+  padding: 50px 0;
+}
+
+.whereIsScooters h2 {
+  font-size: 4em;
+  line-height: 2em;
+}
+
+.whereIsScooters p {
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.2em;
+  margin-bottom: 2em;
+}
+
+.whereIsScooters img {
+  width: 100%;
+  border-radius: 56px;
+}
+
+/* downloadApp_section  */
+
+.downloadApp_section {
+  background: var(--color-white);
+}
+
+.downloadAppcontaner_section {
+  padding: 83px;
+  background-image: url(img/bg-phone.jpg);
+  background-size: 95%;
+  background-position: 0 250px;
+  background-repeat: no-repeat;
+  /* height: 76vh; */
+}
+
+.downloadAppcontaner_section h2 {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+
+.downloadApp_section_Content {
+  width: 60%;
+}
+
+.downloadAppcontaner_section p {
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.2em;
+  margin-bottom: 2em;
+}
+
+/* footer*/
+
+footer {
+  background-color: var(--color-lighrgrey);
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 56px 0;
+}
+
+.footer_container p {
+  margin-bottom: 2em;
+  font-size: 0.82em;
+  font-weight: 600;
+}
+
+.footer_container_left {
+  width: 60%;
+}
+
+.footer_container_right {
+  width: 35%;
+}
