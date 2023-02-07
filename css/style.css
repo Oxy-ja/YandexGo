@@ -512,7 +512,7 @@ h1 {
 .rates_dude {
   width: 90%;
   height: 400px;
-  background-image: url(img/dude.jpg);
+  background-image: url(./img/dude.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border: 5px solid var(--color-black);
